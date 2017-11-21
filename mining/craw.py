@@ -4,12 +4,12 @@ import sys
 
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
-judul = "Alasan Khofifah Pilih Emil Dardak Jadi Pendampingnya di Pilgub Jatim 2018"
-url = "https://today.line.me/ID/pc/article/Alasan+Khofifah+Pilih+Emil+Dardak+Jadi+Pendampingnya+di+Pilgub+Jatim+2018-J67mVx"
+judul = "Wali Kota Risma Mencoba Mobil Penyapu Jalanan di AS"
+url = "http://global.liputan6.com/read/3145076/video-wali-kota-risma-mencoba-mobil-penyapu-jalanan-di-as?source=search"
 
 count = dict()
 
-f = open("be2.txt","r")
+f = open("be24.txt","r")
 read = f.read()
 f2 = open("stop_list.txt","r")
 stop = f2.read()

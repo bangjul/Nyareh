@@ -44,7 +44,7 @@
     <div class="ui container">
       <div class="ui secondary pointing  menu">
         <a class="item">Home</a>
-        <a class="item">Profile</a>
+        <a class="item" href="view/profile.php">Profile</a>
         <div class="right menu">
           <!-- <img class="ui image" src="public/images/logoNyareh.png"> -->
         </div>
@@ -55,7 +55,7 @@
         Jancok
       </h1>
       <h2>carilah sesuka kalian</h2> -->
-      <br><br><br>
+      <br><br><br><br><br>
       <img class="ui centered medium image" src="public/images/logoNyareh3.png">
       <br>
       <!-- <div class="ui huge primary button">

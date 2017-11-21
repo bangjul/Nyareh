@@ -57,7 +57,7 @@
             </div>
           </form>  
         </div>
-        
+       
       </div>
       <div class="ui divider"></div>
       
@@ -89,6 +89,7 @@
                     echo '<div class="ui card" style="width: 100%;">
                         <div class="content">
                         <a href = "'.$data['url'].'"class="header">'.$data['judul'].'</a>
+                        <a>'.$data['url'].'</a>
                         <div class="meta"></div>
                         <div class="description">
                             <p>'.$string.'</p>
@@ -96,6 +97,31 @@
                         </div>
                     </div>';
                 }
+
+                // $query2 = mysqli_query($connection, "select distinct judul, berita, url from text where keyword !='".$key."' ");
+                // while ($data = mysqli_fetch_assoc($query2)){
+                //     $string = strip_tags($data['berita']);
+                //     if (strlen($string) > 500) {
+                        
+                //             // truncate string
+                //             $stringCut = substr($string, 0, 500);
+                        
+                //             // make sure it ends in a word so assassinate doesn't become ass...
+                //             $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'... <a href="'.$data['url'].'">Read More</a>'; 
+                //         }
+
+                //     echo '<div class="ui card" style="width: 100%;">
+                //         <div class="content">
+                //         <a href = "'.$data['url'].'"class="header">'.$data['judul'].'</a>
+                //         <a>'.$data['url'].'</a>
+                //         <div class="meta"></div>
+                //         <div class="description">
+                //             <p>'.$string.'</p>
+                //         </div>
+                //         </div>
+                //     </div>';
+                //   }
+
             }else{
                 echo "<h4>Pencarian Keyword tidak ada</h4>";
             }

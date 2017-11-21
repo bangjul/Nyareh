@@ -4,12 +4,12 @@ import sys
 
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
-judul = "Hasil Analisa, Kecepatan Fortuner Ditumpangi Setnov Saat Kecelakaan 50 Km/Jam"
-url = "https://today.line.me/ID/pc/article/Ini+Hasil+Analisa+Kecepatan+Fortuner+Saat+Setnov+Kecelakaan-o0WNO5"
+judul = "Alasan Khofifah Pilih Emil Dardak Jadi Pendampingnya di Pilgub Jatim 2018"
+url = "https://today.line.me/ID/pc/article/Alasan+Khofifah+Pilih+Emil+Dardak+Jadi+Pendampingnya+di+Pilgub+Jatim+2018-J67mVx"
 
 count = dict()
 
-f = open("be1.txt","r")
+f = open("be2.txt","r")
 read = f.read()
 f2 = open("stop_list.txt","r")
 stop = f2.read()

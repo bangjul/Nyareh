@@ -5,7 +5,7 @@
 
 /* Global Part */
 .ui.vertical.stripe {
-  padding: 8em 0em; }
+  padding: 4em 0em; }
   .ui.vertical.stripe h3 {
     font-size: 2em; }
   .ui.vertical.stripe .button + h3, .ui.vertical.stripe p + h3 {

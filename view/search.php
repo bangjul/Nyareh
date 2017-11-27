@@ -9,7 +9,7 @@
 
     <!-- Site Properties -->
     
-    <title>IOLancer - Selesaikan Pekerjaan Dengan Cepat</title>
+    <title>Nyareh - search engine for political article</title>
     <link rel="stylesheet" type="text/css" href="../public/css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../lib/slick/slick-theme.css" />
@@ -29,17 +29,17 @@
 <body class="pushable">
 
 
-<div class="ui large top fixed menu transition hidden">
+<!-- <div class="ui large top fixed menu transition hidden">
   <div class="ui container">
     
     <a class="item" >Home</a>
     <a class="item">Profile</a>
   
     <div class="right menu">
-      <!-- <img class="ui mini image" src="public/images/logoNyareh2.png"> -->
+      
     </div>
   </div>
-</div>
+</div> -->
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
     <div class="ui container">
@@ -73,7 +73,14 @@
             
           if(isset($_POST["search"])){
             $key = $_POST['search'];
-            $query = mysqli_query($connection,"select distinct judul, berita, url from text where keyword='".$key."' order by jumlah desc");
+            $split_key = explode(' ', $key);
+            strtolower($key);
+            $gabung = "";
+            foreach ($split_key as $value){
+                $gabung = $gabung.'"'.$value.'",';
+            }
+            $gabung = rtrim($gabung,", ");
+            $query = mysqli_query($connection,"select distinct judul, berita, url from text where keyword in (".$gabung.") order by jumlah desc");
             if (mysqli_num_rows($query) > 0) {
                 while ($data = mysqli_fetch_assoc($query)){
                     $string = strip_tags($data['berita']);
@@ -131,8 +138,34 @@
           }
 
           ?>
+
+      <br>
+      <div class="ui centered grid">
+        <div class="ui pagination menu">
+          <a class="item"  style="color: black">
+            1
+          </a>
+          <a class="item"  style="color: black">
+            2
+          </a>
+          <a class="item"  style="color: black">
+            3
+          </a>
+          <a class="item"  style="color: black">
+            4
+          </a>
+          <a class="item"  style="color: black">
+            Next
+          </a>
+        </div>
+      </div>
+
     </div>
+
+
   </div>
+
+
 
 </div>
 

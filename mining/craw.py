@@ -4,12 +4,12 @@ import sys
 
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
-judul = "Wali Kota Risma Mencoba Mobil Penyapu Jalanan di AS"
-url = "http://global.liputan6.com/read/3145076/video-wali-kota-risma-mencoba-mobil-penyapu-jalanan-di-as?source=search"
+judul = "KBRI Kairo: Tak Ada Korban WNI dalam Teror Bom di Masjid Mesir"
+url = "https://tirto.id/kbri-kairo-tak-ada-korban-wni-dalam-teror-bom-di-masjid-mesir-cACL"
 
 count = dict()
 
-f = open("be24.txt","r")
+f = open("60.txt","r")
 read = f.read()
 f2 = open("stop_list.txt","r")
 stop = f2.read()
@@ -25,7 +25,7 @@ low = [x.lower() for x in coba]
 
 for i in low:
     word = i
-    for ch in ['.',',','!','(',')',';','”','“',']','[',':','?','/','"','-']:
+    for ch in ['.',',','!','(',')',';','”','“',']','[',':','?','/','"','-','_','+','=','#','$','%','^','&','*','|','<','>','@']:
         word = word.replace(ch,"")
         i = word
         
@@ -52,7 +52,7 @@ for i in low:
 # print(count)
 
 # Open database connection
-db = pymysql.connect("localhost","root","","text_mining" )
+db = pymysql.connect("localhost","root","","nyareh" )
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()

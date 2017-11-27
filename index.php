@@ -9,7 +9,7 @@
 
     <!-- Site Properties -->
     
-    <title>IOLancer - Selesaikan Pekerjaan Dengan Cepat</title>
+    <title>Nyareh - search engine for political article</title>
     <link rel="stylesheet" type="text/css" href="public/css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
@@ -31,8 +31,8 @@
 
 <div class="ui large top fixed menu transition hidden">
   <div class="ui container">
-    <a class="item" href="index.php">Home</a>
-    <a class="item">Profile</a>
+    <!-- <a class="item" href="index.php">Home</a> -->
+    <a class="item" href="">Profile</a>
   
     <div class="right menu">
       <!-- <img class="ui mini image" src="public/images/logoNyareh2.png"> -->
@@ -43,7 +43,7 @@
   <div class="ui inverted vertical masthead center aligned segment">
     <div class="ui container">
       <div class="ui secondary pointing  menu">
-        <a class="item">Home</a>
+        <!-- <a class="item">Home</a> -->
         <a class="item" href="view/profile.php">Profile</a>
         <div class="right menu">
           <!-- <img class="ui image" src="public/images/logoNyareh.png"> -->
